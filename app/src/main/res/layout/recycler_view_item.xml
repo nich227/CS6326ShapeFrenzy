@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/player_place_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/fira_sans"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@tools:sample/us_zipcodes" />
+
+    <TextView
+        android:id="@+id/player_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/fira_sans"
+        app:layout_constraintStart_toEndOf="@id/place_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/player_score_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_sans"
+        app:layout_constraintStart_toEndOf="@id/place_guideline"
+        app:layout_constraintTop_toBottomOf="@id/player_name_item"
+        tools:text="@tools:sample/us_zipcodes" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/left_aligned_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="player_name_item, player_score_item, player_place_item" />
+
+    <TextView
+        android:id="@+id/datetime_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_sans"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/datetime_guideline"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/date/mmddyy" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/place_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/datetime_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

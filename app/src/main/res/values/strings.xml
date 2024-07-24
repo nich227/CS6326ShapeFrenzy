@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Asg6-nkc160130</string>
+    <string name="main_activity_title">Shape Frenzy</string>
+    <string name="start_button_text">Play</string>
+    <string name="instructions_title_text">Instructions</string>
+    <string name="instructions_card_text">
+            &#8226; Touch only the blue circles to make them disappear.\n
+            &#8226; The goal is to touch 10 of these shapes.\n
+            &#8226; Each shape has a lifetime. If a correct shape disappears before you touch it, its reward will be deducted from your score.\n\n
+            <p>Good luck! 😃</p>
+    </string>
+    <string name="got_it">Got it!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="game_back_popup_title">Confirmation</string>
+    <string name="game_back_popup_text">Are you sure you want to quit the game?</string>
+    <string name="game_finished_toast">Congratulations! You got 10 shapes! 🎉🎊</string>
+    <string name="thanks_playing_toast">Thanks for playing! 😊</string>
+    <string name="timer_card_title">⌚ Time Elapsed</string>
+    <string name="score_card_title">🕹 Total Score</string>
+    <string name="missed_circles_title">🔵 Missed Circles</string>
+    <string name="highscores_appbar_title">High Scores</string>
+    <string name="new_appbar_title">New High Score</string>
+    <string name="add_text">Add</string>
+    <string name="save_text">Save</string>
+    <string name="player_name_label">Player name</string>
+    <string name="score_name_label">Score</string>
+    <string name="datetime_label">Date</string>
+    <string name="player_name_error">Player\'s name must not be empty</string>
+    <string name="datetime_format_error">Date is not in the correct format</string>
+    <string name="datetime_bounds_error">Date is in the future or too far in the past</string>
+    <string name="score_error">Score must be a positive integer</string>
+    <string name="score_str">Score:\u0020</string>
+    <string name="add_score_toast">\u0020added to high score list.</string>
+    <string name="low_score_toast">\'s score is too low to be added.</string>
+</resources>

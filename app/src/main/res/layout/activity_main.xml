@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainSquare"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/demo_square"
+        android:contentDescription="Demo square"
+        app:layout_constraintBottom_toTopOf="@id/mainActivityTitle"
+        app:layout_constraintEnd_toStartOf="@id/shapeGuideline"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mainCircle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/demo_circle"
+        android:contentDescription="Demo circle"
+        app:layout_constraintBottom_toTopOf="@id/mainActivityTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/shapeGuideline" />
+
+    <TextView
+        android:id="@+id/mainActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/zilla_slab"
+        android:gravity="center"
+        android:text="@string/main_activity_title"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/start_button_text"
+        app:icon="@drawable/ic_baseline_play_circle_outline_24"
+        app:layout_constraintEnd_toEndOf="@id/mainActivityTitle"
+        app:layout_constraintStart_toStartOf="@id/mainActivityTitle"
+        app:layout_constraintTop_toBottomOf="@id/mainActivityTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/instructionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:text="@string/instructions_title_text"
+        app:layout_constraintEnd_toEndOf="@id/startButton"
+        app:layout_constraintStart_toStartOf="@id/startButton"
+        app:layout_constraintTop_toBottomOf="@id/startButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/shapeGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
